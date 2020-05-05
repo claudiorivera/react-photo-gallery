@@ -1,0 +1,32 @@
+{
+  "name": "react-photo-gallery",
+  "version": "1.0.0",
+  "description": "A photo gallery made with React for a homework assignment.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently --names 'SERVER,CLIENT' -c 'bgBlue.bold,bgMagenta.bold' npm:server npm:client"
+  },
+  "author": "Claudio Rivera",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "pg-promise": "^10.5.2"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claudiorivera/react-photo-gallery.git"
+  },
+  "bugs": {
+    "url": "https://github.com/claudiorivera/react-photo-gallery/issues"
+  },
+  "homepage": "https://github.com/claudiorivera/react-photo-gallery#readme"
+}
