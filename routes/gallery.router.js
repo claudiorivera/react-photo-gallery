@@ -2,22 +2,8 @@ const express = require("express");
 const router = express.Router();
 const pgp = require("pg-promise")();
 
-const DB_HOST = process.env.DB_HOST;
-const DB_PORT = process.env.DB_PORT;
-const DB_NAME = process.env.DB_NAME;
-const DB_USER = process.env.DB_USER;
-const DB_PASSWORD = process.env.DB_PASSWORD;
-
 // Postgres config
-const dbConnectionConfig = {
-  host: DB_HOST,
-  port: DB_PORT,
-  database: DB_NAME,
-  user: DB_USER,
-  password: DB_PASSWORD,
-  max: 30, // use up to 30 connections
-};
-const db = pgp(dbConnectionConfig);
+const db = pgp(process.env.DB_URI);
 
 router.put("/like/:id", async (req, res) => {
   try {
