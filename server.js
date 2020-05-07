@@ -7,7 +7,7 @@ const PORT = process.env.PORT;
 
 /** ---------- MIDDLEWARE ---------- **/
 app.use(express.json());
-app.use(express.static("build"));
+app.use(express.static("/client/build"));
 
 /** ---------- EXPRESS ROUTES ---------- **/
 app.use("/gallery", gallery);
