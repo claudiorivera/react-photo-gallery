@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 const gallery = require("./routes/gallery.router");
 
-const PORT = process.env.SERVER_PORT;
+const PORT = process.env.PORT;
 
 /** ---------- MIDDLEWARE ---------- **/
 app.use(express.json());
