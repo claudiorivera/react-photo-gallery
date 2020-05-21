@@ -6,14 +6,14 @@ const gallery = require("./routes/gallery.router");
 
 const PORT = process.env.PORT;
 
-/** ---------- MIDDLEWARE ---------- **/
+// Middleware
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "client", "build")));
 
-/** ---------- EXPRESS ROUTES ---------- **/
+// Routes
 app.use("/gallery", gallery);
 
-/** ---------- START SERVER ---------- **/
+// Start server
 app.listen(PORT, () => {
   console.log("Listening on port: ", PORT);
 });

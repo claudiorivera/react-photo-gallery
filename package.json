@@ -1,7 +1,7 @@
 {
   "name": "react-photo-gallery",
   "version": "1.0.0",
-  "description": "A photo gallery made with React for a homework assignment.",
+  "description": "A photo gallery made with React, which was made for a homework assignment.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

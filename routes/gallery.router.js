@@ -2,9 +2,10 @@ const express = require("express");
 const router = express.Router();
 const pgp = require("pg-promise")();
 
-// Postgres config
+// Postgres connection string
 const db = pgp(process.env.DB_URI);
 
+// Update photo likes by id
 router.put("/like/:id", async (req, res) => {
   try {
     const id = parseInt(req.params.id);
@@ -18,6 +19,7 @@ router.put("/like/:id", async (req, res) => {
   }
 });
 
+// Get all photos
 router.get("/", async (req, res) => {
   try {
     const query = await db.any("SELECT * FROM gallery ORDER BY id ASC");
