@@ -29,5 +29,8 @@
   "bugs": {
     "url": "https://github.com/claudiorivera/react-photo-gallery/issues"
   },
-  "homepage": "https://github.com/claudiorivera/react-photo-gallery#readme"
+  "homepage": "https://github.com/claudiorivera/react-photo-gallery#readme",
+  "engines": {
+    "node": "14.x"
+  }
 }
