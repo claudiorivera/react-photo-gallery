@@ -9,8 +9,7 @@
     "server": "nodemon server",
     "client": "yarn --cwd client start",
     "build": "yarn --cwd client install && yarn --cwd client build",
-    "dev": "concurrently --names 'SERVER,CLIENT' -c 'bgBlue.bold,bgMagenta.bold' npm:server npm:client",
-    "heroku-postbuild": "cd client && yarn && yarn run build"
+    "dev": "concurrently --names 'SERVER,CLIENT' -c 'bgBlue.bold,bgMagenta.bold' npm:server npm:client"
   },
   "author": "Claudio Rivera",
   "license": "MIT",
