@@ -13,7 +13,13 @@ Uploading new photos has not been implemented.
 I'd like to add the ability to upload new photos and have them cropped automatically.
 
 # Install
+
 `yarn && yarn run client-install`
 
+# Config
+
+Add a `.env` file with a `DB_URI` value for a Postgres connection string.
+
 # Dev
+
 `yarn run dev`
