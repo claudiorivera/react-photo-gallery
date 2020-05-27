@@ -1,9 +1,19 @@
 # react-photo-gallery
 
-A photo gallery made with the PERN stack, which was made for a homework assignment.
+A photo gallery made with the PERN stack.
 
-The images are statically hosted, with URLs and likes stored in the database. The user can like a photo, which updates the database.
+The images are statically hosted, with URLs and "likes" stored in the database. The user can like a photo, which updates the database.
+
+# Known Bugs
+
+Uploading new photos has not been implemented.
 
 # Future Improvements
 
 I'd like to add the ability to upload new photos and have them cropped automatically.
+
+# Install
+`yarn && yarn run client-install`
+
+# Dev
+`yarn run dev`
