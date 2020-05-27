@@ -8,6 +8,7 @@
     "start": "node server.js",
     "server": "nodemon server",
     "client": "yarn --cwd client start",
+    "client-install": "yarn --cwd client",
     "build": "yarn --cwd client install && yarn --cwd client build",
     "dev": "concurrently --names 'SERVER,CLIENT' -c 'bgBlue.bold,bgMagenta.bold' npm:server npm:client"
   },
