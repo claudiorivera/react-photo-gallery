@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import axios from "axios";
 import "./styles/App.css";
 import GalleryList from "./GalleryList";
-import GalleryUploadForm from "./GalleryUploadForm";
 
 export default class App extends Component {
   state = {
@@ -33,7 +32,6 @@ export default class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Photo Gallery</h1>
         </header>
-        <GalleryUploadForm />
         <GalleryList
           photos={this.state.photos}
           doLikePhoto={this.doLikePhoto}
