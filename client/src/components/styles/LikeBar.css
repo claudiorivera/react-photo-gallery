@@ -9,6 +9,7 @@
   color: #d00;
   border: none;
   font-size: 1rem;
+  background-color: transparent;
 }
 
 .LikeBar button:hover {
