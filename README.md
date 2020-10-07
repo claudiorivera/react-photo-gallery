@@ -1,6 +1,6 @@
-# react-photo-gallery
+# photo-gallery
 
-A photo gallery made with the PERN stack.
+Updated version of my old photo gallery app. This time made with Next.js and MongoDB.
 
 The images are statically hosted, with URLs and "likes" stored in the database. The user can like a photo, which updates the database.
 
@@ -10,12 +10,12 @@ I'd like to add the ability to upload new photos and have them cropped automatic
 
 # Install
 
-`yarn && yarn run client-install`
+`yarn`
 
 # Config
 
-Add a `.env` file with a `DB_URI` value for a Postgres connection string.
+Add a `.env.local` file with a `MONGODB_URI` value for a connection string.
 
 # Dev
 
-`yarn run dev`
+`yarn dev`

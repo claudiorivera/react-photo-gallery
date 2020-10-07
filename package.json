@@ -1,37 +1,21 @@
 {
-  "name": "react-photo-gallery",
-  "version": "1.0.0",
-  "description": "A photo gallery made with React, which was made for a homework assignment.",
-  "main": "server.js",
+  "name": "photo-gallery",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "server": "nodemon server",
-    "client": "yarn --cwd client start",
-    "client-install": "yarn --cwd client",
-    "build": "yarn --cwd client install && yarn --cwd client build",
-    "dev": "concurrently --names 'SERVER,CLIENT' -c 'bgBlue.bold,bgMagenta.bold' npm:server npm:client"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
-  "author": "Claudio Rivera",
-  "license": "MIT",
   "dependencies": {
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "pg-promise": "^10.5.6"
-  },
-  "devDependencies": {
-    "concurrently": "^5.2.0",
-    "nodemon": "^2.0.4"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/claudiorivera/react-photo-gallery.git"
-  },
-  "bugs": {
-    "url": "https://github.com/claudiorivera/react-photo-gallery/issues"
-  },
-  "homepage": "https://github.com/claudiorivera/react-photo-gallery#readme",
-  "engines": {
-    "node": "14.x"
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "axios": "^0.20.0",
+    "mongoose": "^5.10.8",
+    "next": "9.5.3",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "swr": "^0.3.5"
   }
 }
