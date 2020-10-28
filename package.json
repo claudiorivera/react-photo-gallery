@@ -10,12 +10,12 @@
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
-    "@fortawesome/react-fontawesome": "^0.1.11",
-    "axios": "^0.20.0",
-    "mongoose": "^5.10.8",
-    "next": "9.5.4",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "swr": "^0.3.5"
+    "@fortawesome/react-fontawesome": "^0.1.12",
+    "axios": "^0.21.0",
+    "mongoose": "^5.10.11",
+    "next": "10.0.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "swr": "^0.3.6"
   }
 }
